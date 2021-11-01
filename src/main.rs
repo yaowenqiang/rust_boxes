@@ -4,6 +4,11 @@ struct MyError {
     value: u32,
 }
 fn main() {
+    let s = "hello";
+    dbg!(s as *const _);
+    let s2 : String = "hello".into();
+    dbg!(&s as *const _);
+
     //println!("{}", std::fs::read_to_string("/etc/issue").unwrap());
     //println!("{}", std::fs::read_to_string("/etc/issue").unwrap());
 
